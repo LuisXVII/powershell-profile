@@ -12,4 +12,5 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 4. Open another PowerShell window (without admin privileges) in this folder, then run `setup.ps1`
 5. Follow the installation prompts for each module
 6. Download fzf from GitHub and extract the exe to a folder you want, then add that folder to PATH. https://github.com/junegunn/fzf/releases
+   * Alternatively, you can run `choco install fzf` if you have chocolately installed
 7. Close all PowerShell windows and reopen. Voila!
