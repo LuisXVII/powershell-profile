@@ -1,5 +1,6 @@
 # powershell-profile
 My personal powershell profile. Includes a setup script for first-time setup.
+Based on Donovan Lange's profile https://github.com/donovanlange/WindowsPowerShell/blob/master/Profile.ps1
 
 ## How to install
 1. Download this package
