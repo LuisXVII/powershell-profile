@@ -3,7 +3,9 @@
 # ---------------------------------------------------------------------------
 $MaximumHistoryCount = 512
 $FormatEnumerationLimit = 100
-$RepoPath = "D:\MS\code"
+
+# Modify these to your own paths
+$WorkRepoPath = "D:\MS\code"
 $PersonalRepoPath = "D:\personal\code"
 
 # ---------------------------------------------------------------------------
@@ -86,7 +88,7 @@ function reboot
 
 function repo($project)
 {
-	cd "$RepoPath\$project"
+	cd "$WorkRepoPath\$project"
 }
 
 function personalRepo($project)
@@ -96,7 +98,7 @@ function personalRepo($project)
 
 function repos()
 {
-    cd $RepoPath
+    cd $WorkRepoPath
 }
 
 function personalRepos()

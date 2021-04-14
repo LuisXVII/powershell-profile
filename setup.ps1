@@ -27,6 +27,7 @@ Install-Module -Name oh-my-posh -Scope CurrentUser
 echo "Installing PSFzf..."
 Install-Module -Name PSFzf -Scope CurrentUser
 # choco install fzf # TODO: install chocolatey for automatically installing fzf and add it to PATH
+echo "NOTE: Download fzf from GitHub and extract the exe to a folder you want, then add that folder to PATH. https://github.com/junegunn/fzf/releases"
 
 # Copy profile.ps1 into the location of $profile variable
 echo "Copying profile.ps1 into location of profile variable in $profile"
