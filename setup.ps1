@@ -29,11 +29,13 @@ Install-Module -Name PSFzf -Scope CurrentUser
 # choco install fzf # TODO: install chocolatey for automatically installing fzf and add it to PATH
 echo "NOTE: Download fzf from GitHub and extract the exe to a folder you want, then add that folder to PATH. https://github.com/junegunn/fzf/releases"
 
-# Copy profile.ps1 into the location of $profile variable
+# Copy profile.ps1 into the location of $profile variable. $profile is a read-only variable, so the solution is to copy the profile script into the location of $profile instead
 echo "Copying profile.ps1 into location of profile variable in $profile"
 
 Copy-Item profile.ps1 $profile
 
 echo "Your profile has a chosen theme already in profile.ps1, but you can choose a different prompt style with function 'Get-PoshThemes'"
+
+echo "If you need to update the profile, update profile.ps1 here and then rerun this script."
 
 echo "All done! Please reopen your PowerShell window."
