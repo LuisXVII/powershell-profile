@@ -24,6 +24,11 @@ Install-Module -Name oh-my-posh -Scope CurrentUser
 echo "Installing Terminal Icons..."
 Install-Module -Name Terminal-Icons -Scope CurrentUser
 
+# Tree
+# Tree will display recursively the file contents from where you are and below and pretty print them
+echo "Installing Tree..."
+Install-Module -Name Tree -Scope CurrentUser
+
 # PSFzf
 # fzf is a fuzzy file finder, and will provide fuzzy location searching
 # when using Ctrl+T, and will provide better reverse command searching via

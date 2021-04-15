@@ -45,6 +45,9 @@ Import-Module PSFzf -ArgumentList 'Ctrl+T','Ctrl+R'
 # Note that it might end up duplicating the git info.
 #Import-Module Posh-Git
 
+# Import Tree for tree file display support. Just run "tree"
+Import-Module Tree
+
 # Add icons and colorize to files when running ls/dir
 Import-Module Terminal-Icons
 
