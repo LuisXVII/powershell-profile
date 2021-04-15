@@ -8,6 +8,9 @@ $FormatEnumerationLimit = 100
 $WorkRepoPath = "D:\MS\code"
 $PersonalRepoPath = "D:\personal\code"
 
+#Oh My Posh Theme
+$OhMyPoshTheme = "ys"
+
 # ---------------------------------------------------------------------------
 # Modules
 # ---------------------------------------------------------------------------
@@ -42,14 +45,14 @@ Import-Module PSFzf -ArgumentList 'Ctrl+T','Ctrl+R'
 # Note that it might end up duplicating the git info.
 #Import-Module Posh-Git
 
-# Colorize directory output
-Import-Module PSColor
+# Add icons and colorize to files when running ls/dir
+Import-Module Terminal-Icons
 
 # Enable Oh My Posh for prompt customization
 Import-Module oh-my-posh
 
 # Set Oh My Posh theme
-Set-PoshPrompt -Theme ys
+Set-PoshPrompt -Theme $OhMyPoshTheme
 
 # ---------------------------------------------------------------------------
 # Custom Aliases

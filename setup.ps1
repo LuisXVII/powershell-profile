@@ -4,6 +4,10 @@
 # Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 # ---------------------------------------------------------------------------
 
+# Setting PowerShell Gallery as a trusted repository
+echo "Setting PowerShell Gallery as a trusted repository"
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+
 # PSReadLine
 echo "Installing PSReadLine..."
 Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser
@@ -12,13 +16,13 @@ Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser
 echo "Installing Posh Git..."
 Install-Module -Name posh-git -Scope CurrentUser
 
-# PSColor
-echo "Installing PSColor..."
-Install-Module -Name PSColor -Scope CurrentUser
-
 # Oh My Posh
 echo "Installing Oh My Posh..."
 Install-Module -Name oh-my-posh -Scope CurrentUser
+
+# Terminal Icons
+echo "Installing Terminal Icons..."
+Install-Module -Name Terminal-Icons -Scope CurrentUser
 
 # PSFzf
 # fzf is a fuzzy file finder, and will provide fuzzy location searching
