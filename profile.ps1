@@ -98,13 +98,3 @@ function personalRepo($project)
 {
 	cd "$PersonalRepoPath\$project"
 }
-
-function repos()
-{
-    cd $WorkRepoPath
-}
-
-function personalRepos()
-{
-    cd $PersonalRepoPath
-}
