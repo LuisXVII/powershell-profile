@@ -3,19 +3,24 @@ My personal powershell profile. Includes a setup script for first-time setup.
 Based on Donovan Lange's profile https://github.com/donovanlange/WindowsPowerShell/blob/master/Profile.ps1
 
 ## How to install
-1. Download this package
-1. First time only: Open `fonts` folder and install `CodeNewRoman NF` from there. It will be used for icons in the terminal
+### Preinstalation - first time only
+1. Download or clone this package
+1. Open `fonts` folder and install `CodeNewRoman NF` from there. It will be used for icons in the terminal
+1. Open your terminal of choice (I recommend [Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701) from the Microsoft Store), then settings, the PowerShell section and choose the recently installed font
+   * If you have problems with the font not appearing or want another font, check out the `Font` section at the end of this readme
+1. Optional: Install chocolatey from the [official page](https://chocolatey.org/install) for fuzzy file search and tree support. From a
+   * `choco install fzf -y` for fuzzy file search https://github.com/junegunn/fzf/releases
+   * `choco install tree -y` for tree file display in terminal
+
+### Script installation and update after profile changes
 1. Open `profile.ps1` and modify the variables `WorkRepoPath` and `PersonalRepoPath` to your own folders
 1. Open a PowerShell window with elevated administrator privileges, then run. This is to enable execution of the downloaded modules from the PowerShell Gallery
    ```ps1
    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
    ```
 1. Open another PowerShell window (without admin privileges) in this folder, then run `setup.ps1`
-1. Follow the installation prompts for each module
-1. Download fzf from GitHub and extract the exe to a folder you want, then add that folder to PATH. https://github.com/junegunn/fzf/releases
-   * Alternatively, you can run `choco install fzf` if you have chocolately installed
+1. Follow the installation prompts for each module if necessary
 1. Close all PowerShell windows and reopen. Voila!
-
 
 ## Font
 * Font chosen is `CodeNewRoman NF`
