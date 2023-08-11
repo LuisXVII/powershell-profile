@@ -8,8 +8,8 @@ $FormatEnumerationLimit = 100
 $WorkRepoPath = "D:\MS\code"
 $PersonalRepoPath = "D:\personal\code"
 
-#Oh My Posh Theme
-$OhMyPoshTheme = "ys"
+#Oh My Posh Theme. You can browse themes here https://ohmyposh.dev/docs/themes
+$OhMyPoshTheme = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/zash.omp.json"
 
 # ---------------------------------------------------------------------------
 # Modules
@@ -37,7 +37,7 @@ if ($host.Name -eq 'ConsoleHost')
 # fzf is a fuzzy file finder, and will provide fuzzy location searching
 # when using Ctrl+T, and will provide better reverse command searching via
 # Ctrl-R.
-Import-Module PSFzf -ArgumentList 'Ctrl+T','Ctrl+R'
+#Import-Module PSFzf -ArgumentList 'Ctrl+T','Ctrl+R'
 
 # Git support
 # The Oh My Posh profile already includes git status information from Posh-Git.
@@ -51,11 +51,8 @@ Import-Module Tree
 # Add icons and colorize to files when running ls/dir
 Import-Module Terminal-Icons
 
-# Enable Oh My Posh for prompt customization
-Import-Module oh-my-posh
-
 # Set Oh My Posh theme
-Set-PoshPrompt -Theme $OhMyPoshTheme
+oh-my-posh init pwsh --config $OhMyPoshTheme | Invoke-Expression
 
 # ---------------------------------------------------------------------------
 # Custom Aliases

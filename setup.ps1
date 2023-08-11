@@ -18,7 +18,7 @@ Install-Module -Name posh-git -Scope CurrentUser
 
 # Oh My Posh
 echo "Installing Oh My Posh..."
-Install-Module -Name oh-my-posh -Scope CurrentUser
+winget install JanDeDobbeleer.OhMyPosh -s winget
 
 # Terminal Icons
 echo "Installing Terminal Icons..."
