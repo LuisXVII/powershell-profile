@@ -37,13 +37,13 @@ if ($host.Name -eq 'ConsoleHost')
 # fzf is a fuzzy file finder, and will provide fuzzy location searching
 # when using Ctrl+T, and will provide better reverse command searching via
 # Ctrl-R.
-#Import-Module PSFzf -ArgumentList 'Ctrl+T','Ctrl+R'
+Import-Module PSFzf -ArgumentList 'Ctrl+T','Ctrl+R'
 
 # Git support
 # The Oh My Posh profile already includes git status information from Posh-Git.
 # However, not all themes display all the information, so you can uncomment the next line to enable Posh-Git on every theme.
 # Note that it might end up duplicating the git info.
-#Import-Module Posh-Git
+Import-Module Posh-Git
 
 # Import Tree for tree file display support. Just run "tree"
 Import-Module Tree
