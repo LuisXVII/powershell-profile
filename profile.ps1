@@ -5,7 +5,7 @@ $MaximumHistoryCount = 512
 $FormatEnumerationLimit = 100
 
 # Modify these to your own paths
-$WorkRepoPath = "D:\MS\code"
+$WorkRepoPath = "C:\repo"
 $PersonalRepoPath = "D:\personal\code"
 
 #Oh My Posh Theme. You can browse themes here https://ohmyposh.dev/docs/themes
